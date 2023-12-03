@@ -387,18 +387,16 @@ img
 {
   padding: 100px 0;
 }
-.footer-subscribe-form
-{
-  margin-left: 80px;
-}
 .footer-subscribe-wrapper
 {
   display: flex;
   gap: 24px;
+  margin-left: 80px;
 }
 .footer-subscribe-input
 {
   width: 264px;
+  height: 40px;
   display: block;
   border-radius: 4px;
 border: 1px solid #ffffff;
@@ -413,15 +411,15 @@ font-size: 12px;
 line-height: 2;
 letter-spacing: 0.04em;
 }
-.footer-subscribe-label
+.footer-subscribe-paragraph
 {
   
   color: #ffffff;
   font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
-  display: inline-block;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 .footer-form-btn
 {
@@ -431,22 +429,18 @@ line-height: 1.5;
   padding: 8px 24px;
   background-color: #4D5AE5;
   border-radius: 4px;
-  fill: #ffffff;
-  line-height: 0;
+  color: #ffffff;
   gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 .footer-form-btn-icon
 {
   fill: #ffffff;
-}
-.footer-form-btn-text
-{
-  font-size: 16px;
-font-weight: 500;
-letter-spacing: 0.64px;
-line-height: 1.5;
-text-align: center;
-color:#ffffff ;
+  margin:-left 16px;
 }
 .backdrop
 {
@@ -478,10 +472,16 @@ color:#ffffff ;
   min-height: 584px;    
   border-radius: 4px;
   background-color: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-window-btn
 {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   width: 24px;
 height: 24px;
   top: 24px;
@@ -491,14 +491,18 @@ height: 24px;
   border-radius: 50%;
   border: none;
   line-height: 0;
-  stroke: #2E2F42; 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  stroke: #2E2F42;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
+.modal-window-close-icon
+{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .modal-window-btn:hover,
 .modal-window-btn:focus
 {
-  fill: #ffffff;  
+  border: #ffffff;  
   background-color: #404BBF;
 }
 .modal-window-action-paragraph
